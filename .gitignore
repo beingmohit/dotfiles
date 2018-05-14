@@ -16,3 +16,5 @@
 !scripts/*
 !scripts/**
 !README.md
+!screenshots
+!screenshots/*
