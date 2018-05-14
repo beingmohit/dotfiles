@@ -14,4 +14,4 @@
 !config/*
 !scripts
 !scripts/*
-
+!scripts/**
