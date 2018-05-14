@@ -1,0 +1,17 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.bashrc
+!.oh-my-zsh
+.oh-my-zsh/.git
+!.Xdefaults
+!.xinitrc
+!.Xresources
+!.zshrc
+!config
+!config/*
+!scripts
+!scripts/*
+
