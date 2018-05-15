@@ -188,7 +188,7 @@ mode "resize" {
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	#position top
+	position top
         status_command i3status | /home/mohit/scripts/i3spotifystatus/pystatus.py
 	font pango: DejaVu Sans Mono, Icons 10
 }
@@ -254,3 +254,17 @@ exec --no-startup-id systemctl --user import-environment DISPLAY
 
 #open chromium 
 exec --no-startup-id i3-msg 'wrokspace 1; exec /usr/bin/chromium'
+
+gaps inner 10
+gaps outer 0
+smart_borders on
+smart_gaps on
+
+# class                 border  backgr. text    indicator child_border
+client.focused 		#ffffff #555555 #ffffff #ffffff   #ffffff
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
