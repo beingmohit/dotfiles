@@ -29,12 +29,14 @@
 
 #window {
     background-color: @background;
-    border: 0;
+    border: 2px;
+    border-color: #ffffff;
     padding: 2.5ch;
+
 }
 
 #mainbox {
-    border: 0;
+    border: 2px;
     padding: 0;
 }
 
@@ -144,3 +146,11 @@
     spacing: 0;
     text-color: @normal-foreground;
 }
+
+#textbox-prompt-colon {
+  expand: false;
+  str: ":";
+
+}
+
+
