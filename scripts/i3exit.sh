@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function lock {
-    sh ~/scripts/lock.sh 
+    sh ~/scripts/lock.sh -l dim 
 }
 
 case "$1" in

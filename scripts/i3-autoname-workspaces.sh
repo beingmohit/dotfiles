@@ -23,10 +23,12 @@ WINDOW_ICONS = {
     'libreoffice-writer': '',
     'libreoffice-calc': '',
     'peek': '',
-    'mpv': ''
+    'mpv': '',
+    'spotify': '',
+    'nautilus': ''
 }
 
-DEFAULT_ICON = '󰀏'
+DEFAULT_ICON = ''
 
 #########################
 
