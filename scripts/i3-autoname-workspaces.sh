@@ -25,7 +25,8 @@ WINDOW_ICONS = {
     'peek': '',
     'mpv': '',
     'spotify': '',
-    'nautilus': ''
+    'nautilus': '',
+    'thunderbird': ''
 }
 
 DEFAULT_ICON = ''

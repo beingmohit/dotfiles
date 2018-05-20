@@ -19,7 +19,7 @@ set $update && killall -SIGUSR1 i3status
 workspace_layout tabbed
 
 #autostart
-exec $psst xautolock -time 9 -locker '~/.i3/i3exit.sh lock' &
+exec $psst xautolock -time 1 -locker '~/scripts/i3exit.sh lock' &
 
 #font
 #font pango:DejaVu Sans Mono 8
@@ -271,3 +271,5 @@ client.background       #ffffff
 
 # Automatically rename workspaces
 exec_always ~/scripts/i3-autoname-workspaces.sh &
+
+for_window [urgent="latest"] focus

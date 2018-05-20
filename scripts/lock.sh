@@ -6,7 +6,7 @@
 
 
 # create folder in ~/.cache/i3lock directory
-folder="$HOME/.cache/i3lock"
+folder="$HOME/.i3lock"
 
 # ratio for rectangle to be drawn for time background on lockscreen
 # Original Image
