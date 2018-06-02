@@ -19,7 +19,7 @@ set $update && killall -SIGUSR1 i3status
 workspace_layout tabbed
 
 #autostart
-exec $psst xautolock -time 1 -locker '~/scripts/i3exit.sh lock' &
+exec $psst xautolock -time 10 -locker '~/scripts/i3exit.sh lock' &
 
 #font
 #font pango:DejaVu Sans Mono 8
@@ -189,6 +189,7 @@ mode "resize" {
 # finds out, if available)
 bar {
 	position top
+	mode hide
         status_command i3status | /home/mohit/scripts/i3spotifystatus/pystatus.py
 	font pango: DejaVu Sans Mono, Icons 10
 }
@@ -223,8 +224,8 @@ bindsym $mod+l            exec $psst ~/scripts/i3exit.sh lock
 bindsym $mod+Control+Left        exec $psst pactl set-sink-volume @DEFAULT_SINK@ -5% && pactl set-sink-mute @DEFAULT_SINK@ 0 $update
 bindsym $mod+Control+Right       exec $psst pactl set-sink-volume @DEFAULT_SINK@ +5% && pactl set-sink-mute @DEFAULT_SINK@ 0 $update
 bindsym $mod+Control+0           exec $psst pactl set-sink-mute @DEFAULT_SINK@ toggle $update
-bindsym $mod+Control+Down        exec light -U 10
-bindsym $mod+Control+Up          exec light -A 10
+bindsym $mod+Control+Down        exec xbacklight -dec 10 #exec light -U 10
+bindsym $mod+Control+Up          exec xbacklight -inc 10 #exec light -A 10
 bindsym $mod+Mod2+Control+KP_1           exec playerctl play-pause
 bindsym $mod+Mod2+Control+KP_2           exec playerctl previous
 bindsym $mod+Mod2+Control+KP_3           exec playerctl next

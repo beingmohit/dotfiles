@@ -122,3 +122,5 @@ setopt    inc_append_history  #Immediately append to the history file, not just 
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_NODE_SHOW=false
 SPACESHIP_PHP_SHOW=false
+
+export GULPWATCHINTERVAL=5000 
