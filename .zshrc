@@ -74,6 +74,7 @@ plugins=(
  laravel
  archlinux
  git
+ zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,7 +113,7 @@ alias vi=vim
 alias please='sudo $(fc -ln -1)'
 
 HISTSIZE=9999999               #How many lines of history to keep in memory
-HISTFILE=/tmp/.zsh_history     #Where to save history to disk
+HISTFILE=~/.zsh_history     #Where to save history to disk
 SAVEHIST=9999999             #Number of history entries to save to disk
 setopt    appendhistory     #Append history to the history file (no overwriting)
 setopt    share_history      #Share history across terminals
@@ -122,5 +123,7 @@ setopt    inc_append_history  #Immediately append to the history file, not just 
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_NODE_SHOW=false
 SPACESHIP_PHP_SHOW=false
+SPACESHIP_DOCKER_SHOW=false
 
 export GULPWATCHINTERVAL=5000 
+
