@@ -254,13 +254,13 @@ case "$1" in
 		done
 
 		rectangles=" "
-		SR=$(xrandr --query | grep ' connected' | grep -o '[0-9][0-9]*x[0-9][0-9]*[^ ]*')
-		for RES in $SR; do
-			SRA=(${RES//[x+]/ })
-			CX=$((${SRA[2]} + 25))
-			CY=$((${SRA[1]} - 30))
-			rectangles+="rectangle $CX,$CY $((CX+300)),$((CY-80)) "
-		done
+		#SR=$(xrandr --query | grep ' connected' | grep -o '[0-9][0-9]*x[0-9][0-9]*[^ ]*')
+		#for RES in $SR; do
+		#	SRA=(${RES//[x+]/ })
+		#	CX=$((${SRA[2]} + 25))
+		#	CY=$((${SRA[1]} - 30))
+		#	rectangles+="rectangle $CX,$CY $((CX+300)),$((CY-80)) "
+		#done
 
 		# User supplied Image
 		user_image="$folder/user_image.png"
