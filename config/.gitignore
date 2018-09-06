@@ -23,4 +23,6 @@
 !gtk-2.0/*
 !screenshot.jpg
 !.gitignore
+!Code\ -\ OSS/User/keybindings.json
+!Code\ -\ OSS/User/settings.json
 

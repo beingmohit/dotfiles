@@ -1,0 +1,8 @@
+{
+    "window.zoomLevel": 1,
+    "window.menuBarVisibility": "toggle",
+    "problems.autoReveal": false,
+    "editor.renderWhitespace": "all",
+    "explorer.autoReveal": false,
+    "search.useIgnoreFiles": false
+}
