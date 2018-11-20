@@ -324,3 +324,7 @@
 #    urgency = normal
 #
 # vim: ft=cfg
+
+[sound]
+    summary = "*"
+    script = ~/scripts/dunst.sh 

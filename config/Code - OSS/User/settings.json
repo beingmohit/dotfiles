@@ -4,5 +4,6 @@
     "problems.autoReveal": false,
     "editor.renderWhitespace": "all",
     "explorer.autoReveal": false,
-    "search.useIgnoreFiles": false
+    "search.useIgnoreFiles": false,
+    "breadcrumbs.enabled": true
 }

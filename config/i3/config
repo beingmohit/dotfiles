@@ -19,7 +19,7 @@ set $update && killall -SIGUSR1 i3status
 workspace_layout tabbed
 
 #autostart
-exec $psst xautolock -time 10 -locker '~/scripts/i3exit.sh lock' &
+#exec $psst xautolock -time 60 -locker '~/scripts/i3exit.sh lock' &
 
 #font
 #font pango:DejaVu Sans Mono 8
@@ -190,7 +190,7 @@ mode "resize" {
 bar {
 	position top
 	#mode hide
-        status_command i3status | /home/mohit/scripts/i3spotifystatus/pystatus.py
+        status_command i3status 
 	font pango: DejaVu Sans Mono, Icons 10
 }
 
@@ -260,7 +260,7 @@ exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/chromium'
 
 #turn off monitors after x seconds
 exec --no-startup-id xset s 30 30
-exec --no-startup-id xset dpms 0 0 300
+#exec --no-startup-id xset dpms 0 0 300
 
 gaps inner 10
 gaps outer 0

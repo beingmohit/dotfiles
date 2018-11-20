@@ -30,7 +30,8 @@ l_dimblur="$folder/l_dimblur.png"
 
 
 prelock() {
-	pkill -u "$USER" -USR1 dunst
+	#pkill -u "$USER" -USR1 dunst
+	echo "hello"
 }
 
 lock() {
@@ -43,18 +44,19 @@ lock() {
 	foreground=ffffffff
 	i3lock \
 		-t -i "$1" \
-		--clock --datestr "Type password to unlock..." \
+		--clock --datestr "%A, %B %e, %Y" \
 		--insidecolor=$background --ringcolor=$foreground --line-uses-inside \
 		--keyhlcolor=$letterEnteredColor --bshlcolor=$letterRemovedColor --separatorcolor=$background \
 		--insidevercolor=$passwordCorrect --insidewrongcolor=$passwordIncorrect \
 		--ringvercolor=$foreground --ringwrongcolor=$foreground \
 		--radius=120 --ring-width=4 --veriftext="" --wrongtext="" \
 		--verifcolor="$foreground" --timecolor="$foreground" --datecolor="$foreground" \
-		--noinputtext="" --force-clock $lockargs
+		--noinputtext="" --force-clock  --timestr="%I:%M:%S %p" $lockargs
 }
 
 postlock() {
-	pkill -u "$USER" -USR2 dunst
+	#pkill -u "$USER" -USR2 dunst
+	echo "hello"
 }
 
 rec_get_random() {
