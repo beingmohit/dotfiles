@@ -190,7 +190,7 @@ mode "resize" {
 bar {
 	position top
 	#mode hide
-        status_command i3status 
+        status_command py3status 
 	font pango: DejaVu Sans Mono, Icons 10
 }
 
@@ -259,7 +259,7 @@ exec --no-startup-id systemctl --user import-environment DISPLAY
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/chromium'
 
 #turn off monitors after x seconds
-exec --no-startup-id xset s 30 30
+exec --no-startup-id xset s 300 300
 #exec --no-startup-id xset dpms 0 0 300
 
 gaps inner 10
