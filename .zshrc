@@ -61,20 +61,22 @@ ZSH_THEME="spaceship"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   colored-man-pages
- colorize
- extract
- web-search
- wd
- docker
- jira
- postgres
-
- npm
- composer
- laravel
- archlinux
- git
- zsh-autosuggestions
+  colorize
+  extract
+  web-search
+  wd
+  docker
+  jira
+  postgres
+  npm
+  composer
+  laravel
+  archlinux
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  history-substring-search
+  zsh-completions
 )
 
 source $ZSH/oh-my-zsh.sh

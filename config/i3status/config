@@ -18,6 +18,7 @@ general {
     output_format = "i3bar" 
 }
 
+#order += "mpris"
 order += "arch_updates"
 #order += "wanda_the_fish"
 order += "volume master"
@@ -25,9 +26,9 @@ order += "disk /"
 #order += "run_watch DHCP"
 #order += "ipv6"
 #order += "run_watch VPN"
-order += "online_status"
+#order += "online_status"
 order += "external_script"
-order += "net_rate"
+#order += "net_rate"
 order += "wireless wlp2s0"
 order += "ethernet enp1s0"
 order += "battery 0"
@@ -35,6 +36,11 @@ order += "cpu_temperature 0"
 order += "cpu_usage"
 #order += "load"
 order += "tztime local"
+
+mpris {
+    format = "{state} {time}/{length} - {title} - {artist} - {album}"
+    format_none = ""
+}
 
 arch_updates {
 	format = " {pacman}"
@@ -45,7 +51,7 @@ external_script {
 	script_path = "/home/mohit/scripts/ping.sh"
 }
 net_rate {
-    format = " {up} -{down}"
+    format = " {up} - {down}"
 }
 
 online_status {
