@@ -19,7 +19,7 @@ general {
 }
 
 #order += "mpris"
-order += "arch_updates"
+#order += "arch_updates"
 #order += "wanda_the_fish"
 order += "volume master"
 order += "disk /"
@@ -38,7 +38,7 @@ order += "cpu_usage"
 order += "tztime local"
 
 mpris {
-    format = "{state} {time}/{length} - {title} - {artist} - {album}"
+    format = "{state} {time}/{length} - {title}"
     format_none = ""
 }
 

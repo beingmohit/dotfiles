@@ -101,3 +101,7 @@ URxvt*color15 : #EEEEEC
 ! white
 *.color7:       #d9d8d8
 *.color15:      #ffffff
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
