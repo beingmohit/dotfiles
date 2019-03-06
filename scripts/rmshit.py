@@ -108,3 +108,23 @@ def rmshit():
 
 if __name__ == '__main__':
     rmshit()
+
+
+'''
+White List
+
+config/gtk-3.0/bookmarks
+.gitignore
+.bashrc
+.oh-my-zsh
+.Xdefaults
+.xinitrc
+.Xresources
+.zshrc
+scripts
+README.md
+screenshots
+.asoundrc
+
+
+'''

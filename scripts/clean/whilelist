@@ -1,0 +1,16 @@
+/etc/docker
+/etc/lvm
+/etc/modprobe.d
+/etc/netctl
+/etc/printcap
+/etc/sysctl.conf
+/etc/sysctl.d
+/etc/systemd
+/etc/ufw
+/etc/xml
+/opt/containerd
+/usr/share/fonts
+/usr/lib/udev
+/usr/share/man
+/usr/lib/python
+/usr/bin/awslogs

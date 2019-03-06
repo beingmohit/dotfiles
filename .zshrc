@@ -137,3 +137,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$PATH:/home/mohit/.gem/ruby/2.5.0/bin
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOPATH/bin"
+export EDITOR=vim

@@ -5,5 +5,9 @@
     "editor.renderWhitespace": "all",
     "explorer.autoReveal": false,
     "search.useIgnoreFiles": false,
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "editor.largeFileOptimizations": false,
+    "workbench.editor.showTabs": true,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }

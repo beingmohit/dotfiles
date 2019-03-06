@@ -17,14 +17,9 @@
 !rofi/*
 !wallpapers
 !wallpapers/*
-!gtk-3.0
-!gtk-3.0/*
-!gtk-2.0
-!gtk-2.0/*
 !screenshot.jpg
 !.gitignore
 !Code\ -\ OSS/User/keybindings.json
 !Code\ -\ OSS/User/settings.json
 
-gtk-3.0/bookmarks
-gtk-2.0/gtkfilechooser.ini
+
