@@ -28,6 +28,7 @@
 /usr/bin/mturk
 /usr/bin/nokogiri
 /usr/bin/pasteurize
+/usr/bin/protractor
 /usr/bin/pyami_sendmail
 /usr/bin/pyi-archive_viewer
 /usr/bin/pyi-bindepend
@@ -44,11 +45,6 @@
 /usr/bin/scss
 /usr/bin/sdbadmin
 /usr/bin/taskadmin
-/usr/lib32/gdk-pixbuf-2.0
-/usr/lib32/gdk-pixbuf-2.0/2.10.0
-/usr/lib32/gdk-pixbuf-2.0/2.10.0/loaders.cache
-/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache
-/usr/lib/gio/modules/giomodule.cache
-/usr/lib/gtk-2.0/2.10.0/immodules.cache
-/usr/lib/gtk-3.0/3.0.0/immodules.cache
-/usr/share/glib-2.0/schemas/gschemas.compiled
+
+
+/usr/lib/python3.6
