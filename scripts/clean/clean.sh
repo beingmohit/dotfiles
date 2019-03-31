@@ -14,7 +14,8 @@ docker volume prune || true
 #/root
 #broken symlinks
 #npm bin in /usr/bin
-
+#users awk -F: '{ print $1}' /etc/passwd & userdel -r 
+#logs
 #orphans
 sudo pacman -Rns $(pacman -Qtdq) || true 
 

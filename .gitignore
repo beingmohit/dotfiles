@@ -19,3 +19,4 @@
 !screenshots
 !screenshots/**
 !.asoundrc
+!.gtkrc-2.0

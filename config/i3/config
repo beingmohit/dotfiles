@@ -18,8 +18,6 @@ set $update && killall -SIGUSR1 i3status
 #layout
 workspace_layout tabbed
 
-#autostart
-#exec $psst xautolock -time 60 -locker '~/scripts/i3exit.sh lock' &
 
 #font
 #font pango:DejaVu Sans Mono 8
@@ -91,7 +89,6 @@ bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
-
 
 # switch to workpace with numeric keyboard
 bindsym $mod+Mod2+KP_1 workspace number 1
@@ -195,7 +192,7 @@ bar {
 }
 
 # list open windows to switch to
-bindsym $mod+r             exec rofi -show drun
+bindsym $mod+r           exec rofi -show drun
 bindsym $mod+Tab         exec rofi -show window
 
 bindsym $mod+Control+s   exec rofi -show ssh
@@ -207,11 +204,11 @@ set $mode_system    [L]OCK       LOG[O]UT       [S]USPEND       [R]E
 bindsym $alt+Delete mode "$mode_system"
 bindsym Ctrl+$alt+BackSpace mode "$mode_system"
 mode "$mode_system" {
-    bindsym l exec $psst ~/scripts/i3exit.sh lock, mode "default"
-    bindsym o exec $psst ~/scripts/i3exit.sh logout, mode "default"
-    bindsym s exec $psst ~/scripts/i3exit.sh suspend, mode "default"
-    bindsym r exec $psst ~/scripts/i3exit.sh reboot, mode "default"
-    bindsym p exec $psst ~/scripts/i3exit.sh poweroff, mode "default"
+    bindsym l exec $psst ~/scripts/exit.sh lock, mode "default"
+    bindsym o exec $psst ~/scripts/exit.sh logout, mode "default"
+    bindsym s exec $psst ~/scripts/exit.sh suspend, mode "default"
+    bindsym r exec $psst ~/scripts/exit.sh reboot, mode "default"
+    bindsym p exec $psst ~/scripts/exit.sh poweroff, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -220,12 +217,12 @@ mode "$mode_system" {
 
 
 # Specialkeys
-bindsym $mod+l            exec $psst ~/scripts/i3exit.sh lock
+bindsym $mod+l                   exec $psst ~/scripts/exit.sh lock
 bindsym $mod+Control+Left        exec $psst pactl set-sink-volume 1 -5% && pactl set-sink-mute 1 0 $update
 bindsym $mod+Control+Right       exec $psst pactl set-sink-volume 1 +5% && pactl set-sink-mute 1 0 $update
 bindsym $mod+Control+0           exec $psst pactl set-sink-mute 1 toggle $update
-bindsym $mod+Control+Down        exec xbacklight -dec 10 #exec light -U 10
-bindsym $mod+Control+Up          exec xbacklight -inc 10 #exec light -A 10
+bindsym $mod+Control+Down        exec xbacklight -dec 10
+bindsym $mod+Control+Up          exec xbacklight -inc 10 
 bindsym $mod+Mod2+Control+KP_1           exec playerctl play-pause
 bindsym $mod+Mod2+Control+KP_2           exec playerctl previous
 bindsym $mod+Mod2+Control+KP_3           exec playerctl next
@@ -240,7 +237,6 @@ bindsym $mod+p exec flameshot && flameshot gui -p ~/screenshots/
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
-
 #turn off beep
 exec --no-startup-id xset b off 
 
@@ -249,8 +245,9 @@ exec --no-startup-id ~/scripts/dual-screen.sh
 
 #wallpaper
 exec --no-startup-id ~/scripts/wall.sh
-#exec --no-startup-id ~/scripts/lock.sh -w dim
 
+#lock cache
+exec --no-startup-id ~/scripts/lock.sh -u ~/config/wallpapers/main.png 
 
 #notification
 exec --no-startup-id systemctl --user import-environment DISPLAY
@@ -260,7 +257,6 @@ exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/chromium'
 
 #turn off monitors after x seconds
 exec --no-startup-id xset s 300 300
-#exec --no-startup-id xset dpms 0 0 300
 
 gaps inner 10
 gaps outer 0
@@ -273,10 +269,9 @@ client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-
 client.background       #ffffff
 
 # Automatically rename workspaces
-exec_always ~/scripts/i3-autoname-workspaces.sh &
+exec_always ~/scripts/autoname-workspaces.sh &
 
 for_window [urgent="latest"] focus
