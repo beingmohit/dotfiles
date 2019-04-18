@@ -20,3 +20,5 @@
 !screenshots/**
 !.asoundrc
 !.gtkrc-2.0
+!.Xmodmap
+!.themes
