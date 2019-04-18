@@ -19,7 +19,7 @@
         "when": "inFilesPicker && inQuickOpen"
     },
     {
-        "key": "ctrl+shift+c",
+        "key": "ctrl+alt+j",
         "command": "search.action.collapseSearchResults"
     },
     {
@@ -61,5 +61,15 @@
         "key": "shift+f3",
         "command": "-editor.action.previousMatchFindAction",
         "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+0",
+        "command": "-editor.foldAll",
+        "when": "editorTextFocus"
     }
 ]

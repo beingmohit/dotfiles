@@ -218,9 +218,9 @@ mode "$mode_system" {
 
 # Specialkeys
 bindsym $mod+l                   exec $psst ~/scripts/exit.sh lock
-bindsym $mod+Control+Left        exec $psst pactl set-sink-volume 1 -5% && pactl set-sink-mute 1 0 $update
-bindsym $mod+Control+Right       exec $psst pactl set-sink-volume 1 +5% && pactl set-sink-mute 1 0 $update
-bindsym $mod+Control+0           exec $psst pactl set-sink-mute 1 toggle $update
+bindsym $mod+Control+Left        exec $psst ~/scripts/sound.sh decrease 
+bindsym $mod+Control+Right       exec $psst ~/scripts/sound.sh increase 
+bindsym $mod+Control+0           exec $psst ~/scippts/sound.sh mute
 bindsym $mod+Control+Down        exec xbacklight -dec 10
 bindsym $mod+Control+Up          exec xbacklight -inc 10 
 bindsym $mod+Mod2+Control+KP_1           exec playerctl play-pause
