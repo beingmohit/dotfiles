@@ -26,10 +26,10 @@
 /opt/containerd/bin
 /opt/containerd/lib
 /usr/share/fonts/.
-/usr/lib/python/.
-/usr/lib/python3.7/.
-/usr/lib/python3.6
-/usr/lib/python3.6/.
+disabled/usr/lib/python/.
+disabled/usr/lib/python3.7/.
+disabled/usr/lib/python3.6
+disabled/usr/lib/python3.6/.
 /usr/lib32/gdk-pixbuf-2.0
 /usr/lib32/gdk-pixbuf-2.0/2.10.0
 /usr/lib/udev/hwdb.bin
