@@ -198,6 +198,7 @@ bindsym $mod+Tab         exec rofi -show window
 bindsym $mod+Control+s   exec rofi -show ssh
 bindsym $mod+Control+k   exec rofi -show keys
 
+bindsym $mod+b bar mode toggle
 
 # system
 set $mode_system    [L]OCK       LOG[O]UT       [S]USPEND       [R]EBOOT       [P]OWEROFF
