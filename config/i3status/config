@@ -18,26 +18,18 @@ general {
     output_format = "i3bar" 
 }
 
+
 order += "tztime berlin"
-#order += "mpris"
-#order += "arch_updates"
-#order += "wanda_the_fish"
 order += "volume master"
 order += "disk /"
-#order += "run_watch DHCP"
-#order += "ipv6"
-#order += "run_watch VPN"
-#order += "online_status"
 order += "external_script"
-#order += "net_rate"
 order += "wireless wlp2s0"
 order += "ethernet enp1s0"
 order += "battery 0"
 order += "cpu_temperature 0"
 order += "cpu_usage"
-#order += "load"
 order += "tztime local"
-#order += "tztime berlin"
+
 
 mpris {
     format = "{state} {time}/{length} - {title}"
@@ -52,6 +44,7 @@ external_script {
 	format = " {output}"
 	script_path = "/home/mohit/scripts/ping.sh"
 }
+
 net_rate {
     format = " {up} - {down}"
 }

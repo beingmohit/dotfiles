@@ -254,7 +254,7 @@ exec --no-startup-id ~/scripts/lock.sh -u ~/config/wallpapers/main.png
 exec --no-startup-id systemctl --user import-environment DISPLAY
 
 #open chromium 
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/chromium'
+#exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/chromium'
 
 #turn off monitors after x seconds
 exec --no-startup-id xset s 300 300
