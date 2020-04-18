@@ -22,3 +22,6 @@
 !.gtkrc-2.0
 !.Xmodmap
 !.themes
+!.picom.conf
+!.devilspie
+!.devilspie/*

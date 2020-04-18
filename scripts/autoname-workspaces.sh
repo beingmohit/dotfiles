@@ -16,7 +16,7 @@ from collections import deque
 from threading import Timer
 
 WINDOW_ICONS = {
-    'code - oss': '',
+    'code-oss': '',
     'urxvt': '',
     'rofi': '',
     'chromium': '',
@@ -25,8 +25,8 @@ WINDOW_ICONS = {
     'peek': '',
     'mpv': '',
     'spotify': '',
-    'nautilus': '',
-    'thunderbird': ''
+    'org.gnome.nautilus': '',
+    'slack': ''
 }
 
 DEFAULT_ICON = ''

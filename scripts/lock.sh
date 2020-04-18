@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Author : Pavan Jadhaw
-# Github Profile : https://github.com/pavanjadhaw
-# Project Repository : https://github.com/pavanjadhaw/betterlockscreen
-
 # find your resolution so images can be resized to match your screen resolution
 res=$(xdpyinfo | grep dimensions | sed -r 's/^[^0-9]*([0-9]+x[0-9]+).*$/\1/')
 

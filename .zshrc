@@ -37,9 +37,10 @@ setopt    share_history        #Share history across terminals
 setopt    inc_append_history   #Immediately append to the history file, not just when a term is killed
 
 # Misc
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 export EDITOR=vim
 export PATH=$HOME/bin:$PATH
+source /usr/share/nvm/init-nvm.sh
+
+# Fix home/end keys
+bindkey  "^[[7~"   beginning-of-line
+bindkey  "^[[8~"   end-of-line
