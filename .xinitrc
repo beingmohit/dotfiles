@@ -1,6 +1,9 @@
 #! /bin/bash
-picom &
-devilspie -a &
-exec i3 --shmlog-size=26214400
+
+#picom &
+#devilspie -a &
+#glava --desktop &
+
 xmodmap ~/.Xmodmap
 
+exec i3 --shmlog-size=26214400

@@ -1,7 +1,6 @@
 {
     "window.zoomLevel": 1,
     "window.menuBarVisibility": "toggle",
-    "problems.autoReveal": false,
     "editor.renderWhitespace": "all",
     "explorer.autoReveal": false,
     "search.useIgnoreFiles": false,
@@ -11,6 +10,16 @@
     "explorer.confirmDragAndDrop": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
-    editor.maxTokenizationLineLength: 100000000000000000000
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.maxTokenizationLineLength": 100000000000000000000,
+    "php-docblocker.qualifyClassNames": true,
+    "php-docblocker.returnGap": true,
+    "namespaceResolver.showMessageOnStatusBar": true,
+    "intelephense.diagnostics.undefinedTypes": true,
+    "intelephense.diagnostics.undefinedFunctions": true,
+    "intelephense.diagnostics.undefinedConstants": true, 
+    "intelephense.diagnostics.undefinedClassConstants": true, 
+    "intelephense.diagnostics.undefinedMethods": true, 
+    "intelephense.diagnostics.undefinedProperties": true, 
+    "intelephense.diagnostics.undefinedVariables": true,
 }

@@ -1,16 +1,26 @@
 #/bin/bash
 
-UNSPLASH_URL="https://source.unsplash.com/random/1920x1080/?wallpapers"
+UNSPLASH_URL="https://source.unsplash.com/random/1920x1080/?wallpapers,night"
 
-mkdir -p ~/.unsplash
+WALLPAPER_PATH=~/.unsplash/photo.jpg
 
-echo "fetching file"
-wget $UNSPLASH_URL -4 -O /tmp/unsplash.jpg && mv /tmp/unsplash.jpg ~/.unsplash/photo.jpg
+if [ -n "$1" ]; then
+  echo "creating directory"
+  mkdir -p ~/.unsplash
 
-if [ -f ~/.unsplash/photo.jpg ]; then
-  echo "setting backgroud"
-  feh --bg-fill ~/.unsplash/photo.jpg
+  echo "fetching file"
+  wget $UNSPLASH_URL -4 -O /tmp/unsplash.jpg && mv /tmp/unsplash.jpg ~/.unsplash/photo.jpg
+
+  WALLPAPER_PATH=~/.unsplash/photo.jpg
+fi 
+
+if [ -f $WALLPAPER_PATH ]; then
+  echo "setting chrome backgroud"
+  cp $WALLPAPER_PATH .config/chromium/Default/background.jpg 
+
+  echo "setting i3 backgroud"
+  feh --bg-fill $WALLPAPER_PATH
 
   echo "setting lock"
-  ~/scripts/lock.sh -u ~/.unsplash/photo.jpg
+  ~/scripts/lock.sh -u $WALLPAPER_PATH
 fi

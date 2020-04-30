@@ -44,3 +44,12 @@ source /usr/share/nvm/init-nvm.sh
 # Fix home/end keys
 bindkey  "^[[7~"   beginning-of-line
 bindkey  "^[[8~"   end-of-line
+bindkey  "^[[3~"   delete-char
+
+
+
+
+
+
+
+
