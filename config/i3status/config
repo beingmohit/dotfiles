@@ -119,6 +119,5 @@ volume master {
     format_muted = "vol 0"
     device = "default"
     mixer = "Master"
-    mixer_idx = 0
-    device = "pulse:1"
+    mixer_idx = 0 
 }

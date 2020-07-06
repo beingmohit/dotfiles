@@ -1,10 +1,10 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "window.menuBarVisibility": "toggle",
     "editor.renderWhitespace": "all",
     "explorer.autoReveal": false,
     "search.useIgnoreFiles": false,
-    "breadcrumbs.enabled": true,
+    "breadcrumbs.enabled": false,
     "editor.largeFileOptimizations": false,
     "workbench.editor.showTabs": true,
     "explorer.confirmDragAndDrop": false,
@@ -22,4 +22,5 @@
     "intelephense.diagnostics.undefinedMethods": true, 
     "intelephense.diagnostics.undefinedProperties": true, 
     "intelephense.diagnostics.undefinedVariables": true,
+    "editor.minimap.enabled": false,
 }
